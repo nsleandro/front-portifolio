@@ -1,0 +1,42 @@
+<div *ngIf="menuOpened" class="menu-left">   
+    <div class="menu-left__space_header">
+
+    </div>
+    <div class="profile">
+        <div class="profile__img">
+            <img src="assets/profile/profile.jpeg" alt="">
+        </div>
+        <h2>
+            Leandro da Silva
+        </h2>        
+    </div>
+
+    <div class="menu-nav">
+        <button class="menu-nav__button" (click)="navigate('sobre')">
+            Sobre
+        </button>
+
+        <button class="menu-nav__button" (click)="navigate('habilidades')">
+            Habilidades
+        </button>
+
+        <button class="menu-nav__button" (click)="navigate('trabalhos')">
+            Trabalhos
+        </button>
+
+        <button class="menu-nav__button" (click)="navigate('contatos')">
+            Contatos
+        </button>
+
+    </div>
+
+    <div class="icons">
+        <i class="bi bi-linkedin cursor-pointer" (click)="openUrl('https://www.linkedin.com/in/leandronas/')"></i>
+        <i class="bi bi-github cursor-pointer" (click)="openUrl('https://github.com/nsleandro')"></i>
+    </div>    
+    <label for="">
+        Version 1.0.0
+    </label>
+</div>
+
+<div *ngIf="!menuOpened" class="menu-close"></div>

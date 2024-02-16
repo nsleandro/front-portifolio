@@ -1,0 +1,28 @@
+.container-grid
+    background-color: black
+    display: grid
+    grid-template-columns: 300px 1fr 
+    width: 100%
+    min-height: 100%
+    grid-auto-rows: 60px auto
+
+    grid-template-areas: 'menu-left header header' 'menu-left conteudo conteudo'
+
+    #menu-left
+        grid-area: menu-left
+
+    #header
+        grid-area: header
+        height: 100%
+
+    #conteudo
+        grid-area: conteudo
+
+
+.particles
+    padding: 0
+    margin: 0
+    position: fixed
+    width: 100%
+    height: 100%
+
